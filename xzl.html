@@ -85,21 +85,6 @@ var path = [{
     'lng': 102.860463,
     'lat': 24.857375
 }];
-var opts = {
-    position: new BMapGL.Point(102.867505,24.853908),
-    offset: new BMapGL.Size(-28, -20)
-};
-var label = new BMapGL.Label('憬园', opts);
-label.setStyle({
-    color: '#fff',
-    borderRadius: '5px',
-    borderColor: '#fff',
-    backgroundColor: '#79a913',
-    fontSize: '16px',
-    height: '30px',
-    lineHeight: '30px'
-});
-map.addOverlay(label);
 var point = [];
 for (var i = 0; i < path.length; i++) {
     point.push(new BMapGL.Point(path[i].lng, path[i].lat));
